@@ -10,7 +10,7 @@ const dmSansRegular = localFont({ src: "../font/DMSans-Regular.ttf" });
 export default function Home() {
   return (
     <div className=" max-w-screen-xl mx-auto bg-purple relative overflow-hidden w-full">
-      <div className=" flex flex-row justify-between items-center fixed top-0 left-0 right-0 z-50 w-full h-60 px-[120px] py-[115px]">
+      <div className=" flex flex-row justify-between items-center fixed top-0 left-0 right-0 z-50 h-60 px-[120px] py-[115px]  max-w-screen-xl mx-auto">
         <div className={`${bicubik.className} text-[48px]`}>DIANA SABITOVA</div>
         <ul className=" flex flex-row gap-12 text-[20px] font-light">
           <li>FEATURED WORK</li>

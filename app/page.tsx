@@ -3,22 +3,8 @@ import Navbar from "@/components/Navbar";
 import Bubble1 from "@/components/svg/Bubble1";
 import Bubble2 from "@/components/svg/Bubble2";
 import Introduction from "@/components/Introduction";
-import localFont from "next/font/local";
-import ArrowDownRight from "@/components/svg/ArrowDownRight";
-import ArrowRight from "@/components/svg/ArrowRight";
-import { introduction } from "@/static/Static";
 import Banner from "@/components/Banner";
-import Startburst from "@/components/svg/Starburst";
 import Project from "@/components/Project";
-const dmSansRegular = localFont({ src: "../font/DMSans-Regular.ttf" });
-const robotoRegular = localFont({ src: "../font/Roboto-Regular.ttf" });
-const dosisSemibold = localFont({ src: "../font/Dosis-SemiBold.otf" });
-const dosisRegular = localFont({ src: "../font/Dosis-Regular.otf" });
-const dosisMedium = localFont({ src: "../font/Dosis-Medium.otf" });
-const bicubik = localFont({ src: "../font/Bicubik.otf" });
-const clashDisplayMedium = localFont({
-  src: "../font/ClashDisplay-Medium.otf",
-});
 
 export default function Home() {
   return (

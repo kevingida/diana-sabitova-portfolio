@@ -3,6 +3,7 @@ import ArrowDownRight from "./svg/ArrowDownRight";
 import localFont from "next/font/local";
 import { introduction } from "@/static/Static";
 import ArrowRight from "./svg/ArrowRight";
+import Image from "next/image";
 
 const dmSansRegular = localFont({ src: "../font/DMSans-Regular.ttf" });
 const dosisSemibold = localFont({ src: "../font/Dosis-SemiBold.otf" });
@@ -24,7 +25,7 @@ const Introduction = () => {
           style={{ backgroundImage: "url('/Folder.svg')" }}
           className=" w-[400px] h-[500px] flex-none snap-always snap-center z-50 px-[40px] py-[80px]"
         >
-          <img
+          <Image
             src="/dianaPhoto.png"
             alt="Diana Photo"
             width={125}
@@ -33,7 +34,7 @@ const Introduction = () => {
           <p
             className={`${dosisSemibold.className} pt-[60px] pb-[34px] text-[48px] w-[280px] leading-[50px]`}
           >
-            Hello, I’m Diana Sabitova
+            Hello, I&apos;m Diana Sabitova
           </p>
           <div className="flex-grow border-t border-black/60" />
           <div className="flex flex-row justify-between items-center gap-4 pt-[20px]">

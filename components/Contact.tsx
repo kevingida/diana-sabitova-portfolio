@@ -13,7 +13,7 @@ const Contact = () => {
       <h3
         className={`${clashDisplayMedium.className} text-[170px] w-[900px] text-center uppercase leading-[140px]`}
       >
-        let's connect!
+        let&apos;s connect!
       </h3>
       <Link
         href={""}

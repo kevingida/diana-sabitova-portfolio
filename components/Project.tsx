@@ -1,5 +1,6 @@
 import { projects } from "@/static/Static";
 import localFont from "next/font/local";
+import Image from "next/image";
 import React from "react";
 
 const dmSansMedium = localFont({ src: "../font/DMSans-Medium.ttf" });
@@ -20,7 +21,7 @@ const Project = () => {
       <ul className="grid grid-cols-2 gap-x-[76px] gap-y-[69px]">
         {projects.map((project, index) => (
           <li key={index}>
-            <img src={project.image} alt={project.title} />
+            <Image src={project.image} alt={project.title} />
             <h3 className={`${dmSansSemiBold.className} text-[28px] pt-11`}>
               {project.title}
             </h3>

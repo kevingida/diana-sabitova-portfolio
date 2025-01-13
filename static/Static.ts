@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const introduction = [
   {
     id: "[01]",
@@ -72,5 +74,54 @@ export const projects = [
     title: "RoKate",
     description: "Identity & Branding",
     image: "/roKate.png",
+  },
+];
+
+export const aboutMe = [
+  {
+    id: 1,
+    title: "research",
+    list: [
+      "User Interviews",
+      "User Personas",
+      "Competitive Analysis",
+      "Usability Testing",
+      "User Testing",
+      "4 Diamonds diagram",
+    ],
+  },
+  {
+    id: 2,
+    title: "design",
+    list: [
+      "Information architecture",
+      "Wire-framing",
+      "Lo-fi & Hi-fi Prototyping",
+      "identity",
+      "Design System",
+    ],
+  },
+  {
+    id: 3,
+    title: "tools",
+    list: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "miro", "Framer"],
+  },
+];
+
+export const contact = [
+  {
+    id: 1,
+    title: "Behance",
+    link: "https://www.behance.net/dianasabitova",
+  },
+  {
+    id: 2,
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/diana-sabitova-11b3a61a1/",
+  },
+  {
+    id: 3,
+    title: "Instagram",
+    link: "https://www.instagram.com/sabitova.dr/?next=%2F",
   },
 ];

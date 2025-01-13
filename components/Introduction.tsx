@@ -12,7 +12,7 @@ const robotoRegular = localFont({ src: "../font/Roboto-Regular.ttf" });
 
 const Introduction = () => {
   return (
-    <section className=" w-full pl-[120px] pt-[128px]">
+    <section className=" w-full pl-[120px] pt-[128px] z-50">
       <div className=" flex flex-row justify-start items-center gap-8">
         <p className={`${dmSansRegular.className} text-[24px] uppercase`}>
           scroll to explore
@@ -21,7 +21,7 @@ const Introduction = () => {
       </div>
       <div className="pt-[80px] pb-[164px] flex flex-nowrap flex-row gap-12 overflow-x-auto snap-x snap-mandatory">
         <div
-          style={{ backgroundImage: "url('/Union.svg')" }}
+          style={{ backgroundImage: "url('/Folder.svg')" }}
           className=" w-[400px] h-[500px] flex-none snap-always snap-center z-50 px-[40px] py-[80px]"
         >
           <img
@@ -45,7 +45,7 @@ const Introduction = () => {
         </div>
         {introduction.map((intro, index) => (
           <div
-            style={{ backgroundImage: "url('/Union.svg')" }}
+            style={{ backgroundImage: "url('/Folder.svg')" }}
             className=" w-[400px] h-[500px] flex-none snap-always snap-center z-50 px-[40px] py-[94px]"
             key={index}
           >

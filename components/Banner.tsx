@@ -1,6 +1,5 @@
 import { bannerProps } from "@/interface/Interface";
 import React from "react";
-import { text } from "stream/consumers";
 import Startburst from "./svg/Starburst";
 import localFont from "next/font/local";
 

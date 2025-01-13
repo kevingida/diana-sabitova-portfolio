@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import React from "react";
 
 const clashDisplayMedium = localFont({
   src: "../font/ClashDisplay-Medium.otf",

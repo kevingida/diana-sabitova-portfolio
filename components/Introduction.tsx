@@ -13,55 +13,62 @@ const robotoRegular = localFont({ src: "../font/Roboto-Regular.ttf" });
 
 const Introduction = () => {
   return (
-    <section className=" w-full lg:pl-[60px] xl:pl-[120px] pt-[128px] z-50">
-      <div className=" flex flex-row justify-start items-center gap-8">
-        <p className={`${dmSansRegular.className} text-[24px] uppercase`}>
+    <section className=" w-full pl-4 lg:pl-[60px] xl:pl-[120px] pt-12 lg:pt-[128px] z-50">
+      <div className=" flex flex-row justify-start items-center gap-5 lg:gap-8">
+        <p
+          className={`${dmSansRegular.className} text-[20px] lg:text-[24px] uppercase`}
+        >
           scroll to explore
         </p>
-        <ArrowDownRight height={36} />
+        <ArrowDownRight className=" h-6 lg:h-9" />
       </div>
-      <div className="pt-[80px] pb-[164px] flex flex-nowrap flex-row gap-12 overflow-x-auto snap-x snap-mandatory">
+      <div className="pt-[80px] pb-[80px] lg:pb-[164px] flex flex-nowrap flex-row gap-5 lg:gap-12 overflow-x-auto snap-x snap-mandatory">
         <div
           style={{ backgroundImage: "url('/Folder.svg')" }}
-          className=" w-[400px] h-[500px] flex-none snap-always snap-center z-50 px-[40px] py-[80px]"
+          className=" w-[266px] h-[332px] lg:w-[400px] lg:h-[500px] flex-none snap-always snap-center z-50 px-[26px] py-[46px] lg:px-[40px] lg:py-[80px] bg-contain"
         >
           <Image
             src="/dianaPhoto.png"
             alt="Diana Photo"
             width={125}
             height={125}
+            className=" w-[65px] h-[65px] lg:w-[125px] lg:h-[125px] rounded-full"
           />
           <p
-            className={`${dosisSemibold.className} pt-[60px] pb-[34px] text-[48px] w-[280px] leading-[50px]`}
+            className={`${dosisSemibold.className} pt-8 lg:pt-[60px] pb-7 lg:pb-[34px] text-[32px] lg:text-[48px] w-[190px] lg:w-[280px] leading-[50px]`}
           >
             Hello, I&apos;m Diana Sabitova
           </p>
           <div className="flex-grow border-t border-black/60" />
-          <div className="flex flex-row justify-between items-center gap-4 pt-[20px]">
-            <p className={`${robotoRegular.className} text-[16px]  `}>
+          <div className="flex flex-row justify-between items-center gap-4 pt-[18px] lg:pt-[20px]">
+            <p
+              className={`${robotoRegular.className} text-[14px] lg:text-[16px]  `}
+            >
               [ UX/UI Designer ]
             </p>
-            <ArrowRight />
+            <ArrowRight className=" w-[22px] h-[22px] lg:w-[50px] lg:h-[50px]" />
           </div>
         </div>
         {introduction.map((intro, index) => (
           <div
             style={{ backgroundImage: "url('/Folder.svg')" }}
-            className=" w-[400px] h-[500px] flex-none snap-always snap-center z-50 px-[40px] py-[94px]"
+            className=" w-[266px] h-[332px] lg:w-[400px] lg:h-[500px] flex-none snap-always snap-center z-50 px-[26px] py-[46px] lg:px-[40px] lg:py-[80px] bg-contain"
             key={index}
           >
             <h1
-              className={`${dosisRegular.className} text-[40px] leading-none`}
+              className={`${dosisRegular.className} text-[26px] lg:text-[40px] leading-none`}
             >
               {intro.id}
             </h1>
-            <p className={`${dosisMedium.className} text-[48px] pb-4`}>
+            <p
+              className={`${dosisMedium.className} text-[26px] lg:text-[48px] pb-4`}
+            >
               {intro.title}
             </p>
-            <div className="flex-grow border-t border-black/60 pb-8 " />
+            <div className="flex-grow border-t border-black/60 pb-4 lg:pb-8 " />
 
             <p
-              className={`${robotoRegular.className} text-[16px] uppercase leading-[29px] tracking-[0.63px]`}
+              className={`${robotoRegular.className} text-[12px] lg:text-[16px] uppercase leading-[20px] lg:leading-[29px] lg:tracking-[0.63px]`}
             >
               {intro.description}
             </p>

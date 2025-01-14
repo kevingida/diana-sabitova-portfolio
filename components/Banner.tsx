@@ -12,7 +12,7 @@ const Banner = (props: bannerProps) => {
   return (
     <div className={`bg-${props.bgColour} overflow-hidden z-50 flex`}>
       <ul
-        className={`flex items-center w-full h-[73px] gap-[98px] 
+        className={`flex items-center w-full h-[46px] gap-[41px] lg:h-[73px] lg:gap-[98px] 
           bg-${props.bgColour}  
           ${
             props.direction === "left"
@@ -21,12 +21,12 @@ const Banner = (props: bannerProps) => {
           }`}
       >
         {[...Array(repeat), ...Array(repeat)].map((e, i) => (
-          <li key={i} className="flex items-center gap-[98px]">
-            <div className="w-[17px] h-[17px]">
+          <li key={i} className="flex items-center gap-[41px] lg;gap-[98px]">
+            <div className=" w-3 h-3 lg:w-[17px] lg:h-[17px]">
               <Startburst fill={props.textColour} />
             </div>
             <p
-              className={`${clashDisplayMedium.className}, text-${props.textColour} text-[19px] text-nowrap uppercase`}
+              className={`${clashDisplayMedium.className}, text-${props.textColour} text-[12px] lg:text-[19px] text-nowrap uppercase`}
             >
               {props.text}
             </p>

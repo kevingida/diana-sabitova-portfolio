@@ -9,20 +9,20 @@ const clashDisplayMedium = localFont({
 
 const Contact = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center py-[200px] gap-16">
+    <div className="w-full flex flex-col justify-center items-center py-[200px] gap-9 lg:gap-16">
       <h3
-        className={`${clashDisplayMedium.className} lg:text-[120px] xl:text-[170px] w-[900px] text-center uppercase leading-[140px]`}
+        className={`${clashDisplayMedium.className} text-[70px] leading-[55px] lg:text-[120px] xl:text-[170px] lg:w-[900px] text-center uppercase lg:leading-[140px]`}
       >
         let&apos;s connect!
       </h3>
       <Link
         href={""}
-        className=" w-[400px] h-[92px] bg-black text-white font-semibold flex justify-center items-center gap-2 text-[20px] rounded-[46px]"
+        className=" w-[336px] h-[78px] lg:w-[400px] lg:h-[92px] bg-black text-white font-semibold flex justify-center items-center gap-2 text-[16px] lg:text-[20px] rounded-[46px]"
       >
         diana.sabitova.dr@gmail.com
         <ArrowUpRight height={24} />
       </Link>
-      <div className="flex flex-row gap-8">
+      <div className="flex flex-row gap-8 pt-8 lg:pt-0">
         {contact.map((contact, index) => (
           <Link
             key={index}

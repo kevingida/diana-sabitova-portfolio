@@ -9,16 +9,18 @@ const dmSansSemiBold = localFont({ src: "../font/DMSans-SemiBold.ttf" });
 
 const Project = () => {
   return (
-    <section className="w-full lg:px-[60px] xl:px-[120px] pt-[91px] pb-[245px] relative">
-      <h2 className={`${dmSansMedium.className} text-[60px]`}>Projects</h2>
+    <section className="w-full px-4 lg:px-[60px] xl:px-[120px] pt-[60px] lg:pt-[91px] pb-[60px] lg:pb-[245px] relative">
+      <h2 className={`${dmSansMedium.className} text-[30px] lg:text-[60px]`}>
+        Projects
+      </h2>
       <p
-        className={`${dmSansRegular.className} text-[24px] leading-[140%] w-[450px] pb-[91px]`}
+        className={`${dmSansRegular.className} text-[16px] leading-5 w-[270px] pb-8 lg:text-[24px] lg:leading-[140%] lg:w-[450px] lg:pb-[91px]`}
       >
         As a seasoned creator of contemporary, user-friendly web designs and
         digital solutions, I aim to assist you in constructing the brand of your
         fantasies.
       </p>
-      <ul className="grid grid-cols-2 gap-x-[76px] gap-y-[69px]">
+      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-[76px] gap-y-12 lg:gap-y-[69px]">
         {projects.map((project, index) => (
           <li key={index}>
             <Image
@@ -27,10 +29,14 @@ const Project = () => {
               width={800}
               height={680}
             />
-            <h3 className={`${dmSansSemiBold.className} text-[28px] pt-11`}>
+            <h3
+              className={`${dmSansSemiBold.className} text-[16px] lg:text-[28px] pt-4 lg:pt-11`}
+            >
               {project.title}
             </h3>
-            <p className={`${dmSansRegular.className} text-[28px]`}>
+            <p
+              className={`${dmSansRegular.className} text-[16px] lg:text-[28px]`}
+            >
               {project.description}
             </p>
           </li>

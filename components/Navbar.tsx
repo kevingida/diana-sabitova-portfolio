@@ -1,16 +1,28 @@
+"use client";
 import React from "react";
 import localFont from "next/font/local";
+import useScreenSize from "@/lib/useScreenSize";
+import Hamburger from "./svg/Hamburger";
 const bicubik = localFont({ src: "../font/Bicubik.otf" });
 
 const Navbar = () => {
+  const { isMobile } = useScreenSize();
   return (
-    <div className=" flex flex-row justify-between items-center sticky top-0 left-0 right-0 h-60 lg:px-[60px] xl:px-[120px] xl:py-[115px]  max-w-screen-xl mx-auto">
-      <div className={`${bicubik.className} text-[48px]`}>DIANA SABITOVA</div>
-      <ul className=" flex flex-row gap-12 text-[20px] font-light">
-        <li>FEATURED WORK</li>
-        <li>ABOUT ME</li>
-        <li>CONTACTS</li>
-      </ul>
+    <div className=" flex flex-row justify-between items-center sticky top-0 left-0 right-0 lg:h-60 px-4 py-[60px] lg:px-[60px] xl:px-[120px] xl:py-[115px]  max-w-screen-xl mx-auto">
+      <div className={`${bicubik.className} text-[24px] lg:text-[48px]`}>
+        DIANA SABITOVA
+      </div>
+      {isMobile ? (
+        <button>
+          <Hamburger />
+        </button>
+      ) : (
+        <ul className=" flex flex-row gap-12 text-[20px] font-light">
+          <li>FEATURED WORK</li>
+          <li>ABOUT ME</li>
+          <li>CONTACTS</li>
+        </ul>
+      )}
     </div>
   );
 };

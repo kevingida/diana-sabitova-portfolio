@@ -5,7 +5,7 @@ import Image from "next/image";
 const GreenCarLanePage = () => {
   return (
     <>
-      <div className=" max-w-screen-xl mx-auto bg-raisinBlack relative overflow-hidden w-full flex flex-col items-center px-[120px]">
+      <div className=" max-w-screen-xl mx-auto bg-raisinBlack w-full flex flex-col items-center px-[120px]">
         <Image
           src="/greenCarLane-hero-desktop.png"
           alt="greenCarLane hero image"

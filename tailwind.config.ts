@@ -14,6 +14,7 @@ export default {
         saladGreen: "#E3FD9A",
         lightBlack: "#101010",
         raisinBlack: "#262626",
+        spaceCadet: "#18194C",
       },
       screens: {
         sm: "390px",

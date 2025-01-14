@@ -11,7 +11,7 @@ const openSansSemiBold = localFont({
 });
 const interRegular = localFont({ src: "../../../font/Inter-Regular.otf" });
 
-const AppyBytePage = () => {
+const AppyBitePage = () => {
   return (
     <>
       <div className=" max-w-screen-xl mx-auto bg-white w-full flex flex-col items-center px-[120px] pb-[110px] pt-[190px]">
@@ -386,4 +386,4 @@ const AppyBytePage = () => {
   );
 };
 
-export default AppyBytePage;
+export default AppyBitePage;

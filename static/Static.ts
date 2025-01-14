@@ -56,24 +56,28 @@ export const projects = [
     title: "GreenCarLane",
     description: "Web page creating",
     image: "/greenCarLane.png",
+    slug: "green-car-lane",
   },
   {
     id: 2,
     title: "AppyBite App",
     description: "Mobile App",
     image: "/appyBite.png",
+    slug: "appy-bite",
   },
   {
     id: 3,
     title: "Chameleo",
     description: "Web App MVP",
     image: "/chameleo.png",
+    slug: "chameleo",
   },
   {
     id: 4,
     title: "RoKate",
     description: "Identity & Branding",
     image: "/roKate.png",
+    slug: "roKate",
   },
 ];
 

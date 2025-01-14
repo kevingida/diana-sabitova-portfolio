@@ -1,6 +1,7 @@
 import { projects } from "@/static/Static";
 import localFont from "next/font/local";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const dmSansMedium = localFont({ src: "../font/DMSans-Medium.ttf" });
@@ -26,12 +27,14 @@ const Project = () => {
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-[76px] gap-y-12 lg:gap-y-[69px]">
         {projects.map((project, index) => (
           <li key={index}>
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={800}
-              height={680}
-            />
+            <Link href={`/projects/${project.slug}`} passHref>
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={800}
+                height={680}
+              />
+            </Link>
             <h3
               className={`${dmSansSemiBold.className} text-[16px] lg:text-[28px] pt-4 lg:pt-11`}
             >

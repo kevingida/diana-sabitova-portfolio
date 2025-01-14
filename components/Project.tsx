@@ -9,7 +9,10 @@ const dmSansSemiBold = localFont({ src: "../font/DMSans-SemiBold.ttf" });
 
 const Project = () => {
   return (
-    <section className="w-full px-4 lg:px-[60px] xl:px-[120px] pt-[60px] lg:pt-[91px] pb-[60px] lg:pb-[245px] relative">
+    <section
+      className="w-full px-4 lg:px-[60px] xl:px-[120px] pt-[60px] lg:pt-[91px] pb-[60px] lg:pb-[245px] relative"
+      id="featured-work"
+    >
       <h2 className={`${dmSansMedium.className} text-[30px] lg:text-[60px]`}>
         Projects
       </h2>

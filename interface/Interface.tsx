@@ -6,3 +6,7 @@ export interface bannerProps {
   bgColour: string;
   direction?: string;
 }
+
+export interface navbarProps {
+  handleScroll: (id: string) => void;
+}

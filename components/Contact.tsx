@@ -9,7 +9,10 @@ const clashDisplayMedium = localFont({
 
 const Contact = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center py-[200px] gap-9 lg:gap-16">
+    <div
+      className="w-full flex flex-col justify-center items-center py-[200px] gap-9 lg:gap-16"
+      id="contacts"
+    >
       <h3
         className={`${clashDisplayMedium.className} text-[70px] leading-[55px] lg:text-[120px] xl:text-[170px] lg:w-[900px] text-center uppercase lg:leading-[140px]`}
       >

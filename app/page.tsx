@@ -1,3 +1,4 @@
+"use client";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Bubble1 from "@/components/svg/bubble/Bubble1";
@@ -11,6 +12,11 @@ import Contact from "@/components/Contact";
 import Bubble4 from "@/components/svg/bubble/Bubble4";
 
 export default function Home() {
+  const handleScroll = async (id: string) => {
+    document
+      .getElementById(id)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <div className=" max-w-screen-xl mx-auto bg-purple relative overflow-hidden w-full">
       <Bubble1
@@ -27,7 +33,7 @@ export default function Home() {
         height={1213}
         className="absolute bottom-[120px] -left-[120px] w-[300px] lg:bottom-[100px] xl:bottom-0 lg:-left-[100px] xl:-left-40 z-10 lg:w-[604px] lg:h-[1013px] xl:w-[804px] xl:h-[1213px]"
       />
-      <Navbar />
+      <Navbar handleScroll={handleScroll} />
       <Hero />
       <Introduction />
       <Banner

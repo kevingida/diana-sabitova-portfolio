@@ -3,9 +3,11 @@ import React from "react";
 import localFont from "next/font/local";
 import useScreenSize from "@/lib/useScreenSize";
 import Hamburger from "./svg/Hamburger";
+import { navbarProps } from "@/interface/Interface";
+import { navbarMenu } from "@/static/Static";
 const bicubik = localFont({ src: "../font/Bicubik.otf" });
 
-const Navbar = () => {
+const Navbar: React.FC<navbarProps> = ({ handleScroll }) => {
   const { isMobile } = useScreenSize();
   return (
     <div className=" flex flex-row justify-between items-center sticky top-0 left-0 right-0 lg:h-60 px-4 py-[60px] lg:px-[60px] xl:px-[120px] xl:py-[115px]  max-w-screen-xl mx-auto">
@@ -18,9 +20,19 @@ const Navbar = () => {
         </button>
       ) : (
         <ul className=" flex flex-row gap-12 text-[20px] font-light">
-          <li>FEATURED WORK</li>
+          {navbarMenu.map((menu, index) => (
+            <li key={index}>
+              <button
+                onClick={async () => handleScroll(menu.value)}
+                className="uppercase"
+              >
+                {menu.label}
+              </button>
+            </li>
+          ))}
+          {/* <li>FEATURED WORK</li>
           <li>ABOUT ME</li>
-          <li>CONTACTS</li>
+          <li>CONTACTS</li> */}
         </ul>
       )}
     </div>

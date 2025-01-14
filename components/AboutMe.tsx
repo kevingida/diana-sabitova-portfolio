@@ -10,7 +10,10 @@ const dmSansRegular = localFont({ src: "../font/DMSans-Regular.ttf" });
 const AboutMe = () => {
   const { isMobile } = useScreenSize();
   return (
-    <div className="max-w-screen-xl mx-auto bg-saladGreen relative overflow-hidden w-full flex flex-col px-4 py-14 lg:px-[60px] xl:px-[120px] lg:py-[120px]">
+    <div
+      className="max-w-screen-xl mx-auto bg-saladGreen relative overflow-hidden w-full flex flex-col px-4 py-14 lg:px-[60px] xl:px-[120px] lg:py-[120px]"
+      id="about-me"
+    >
       <div className="grid grid-cols-1 grid-rows-[40px_auto_auto_auto] lg:grid-cols-[460px_auto] xl:grid-cols-[566px_auto] lg:grid-rows-[88px_auto_auto_auto]">
         {!isMobile && <span className=" text-[20px] font-light">/02</span>}
         <p

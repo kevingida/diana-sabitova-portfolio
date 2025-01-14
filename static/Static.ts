@@ -125,3 +125,18 @@ export const contact = [
     link: "https://www.instagram.com/sabitova.dr/?next=%2F",
   },
 ];
+
+export const navbarMenu = [
+  {
+    label: "FEATURED WORK",
+    value: "featured-work",
+  },
+  {
+    label: "ABOUT ME",
+    value: "about-me",
+  },
+  {
+    label: "CONTACTS",
+    value: "contacts",
+  },
+];

@@ -10,8 +10,10 @@ export default {
     extend: {
       colors: {
         purple: "#BDC2F6",
+        darkPurple: "#3C0195",
         saladGreen: "#E3FD9A",
         lightBlack: "#101010",
+        raisinBlack: "#262626",
       },
       screens: {
         sm: "390px",

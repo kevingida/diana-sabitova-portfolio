@@ -10,7 +10,7 @@ const clashDisplayMedium = localFont({
 const Contact = () => {
   return (
     <div
-      className="w-full flex flex-col justify-center items-center py-[200px] gap-9 lg:gap-16"
+      className=" bg-purple max-w-screen-xl mx-auto w-full flex flex-col justify-center items-center py-[200px] gap-9 lg:gap-16"
       id="contacts"
     >
       <h3

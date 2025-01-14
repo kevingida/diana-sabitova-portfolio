@@ -8,5 +8,5 @@ export interface bannerProps {
 }
 
 export interface navbarProps {
-  handleScroll: (id: string) => void;
+  handleScroll?: (id: string) => void;
 }

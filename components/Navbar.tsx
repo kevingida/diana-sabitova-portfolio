@@ -23,16 +23,13 @@ const Navbar: React.FC<navbarProps> = ({ handleScroll }) => {
           {navbarMenu.map((menu, index) => (
             <li key={index}>
               <button
-                onClick={async () => handleScroll(menu.value)}
+                onClick={async () => handleScroll && handleScroll(menu.value)}
                 className="uppercase"
               >
                 {menu.label}
               </button>
             </li>
           ))}
-          {/* <li>FEATURED WORK</li>
-          <li>ABOUT ME</li>
-          <li>CONTACTS</li> */}
         </ul>
       )}
     </div>

@@ -10,3 +10,11 @@ export interface bannerProps {
 export interface navbarProps {
   handleScroll?: (id: string) => void;
 }
+
+export interface projectProps {
+  handleCaseStudy: (boolean: boolean) => void;
+}
+
+export interface cursorProps {
+  isCaseStudy: boolean;
+}

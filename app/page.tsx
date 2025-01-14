@@ -10,6 +10,7 @@ import Project from "@/components/Project";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
 import Bubble4 from "@/components/svg/bubble/Bubble4";
+import Cursor from "@/components/Cursor";
 
 export default function Home() {
   const handleScroll = async (id: string) => {
@@ -33,6 +34,7 @@ export default function Home() {
         height={1213}
         className="absolute bottom-[120px] -left-[120px] w-[300px] lg:bottom-[100px] xl:bottom-0 lg:-left-[100px] xl:-left-40 z-10 lg:w-[604px] lg:h-[1013px] xl:w-[804px] xl:h-[1213px]"
       />
+      <Cursor />
       <Navbar handleScroll={handleScroll} />
       <Hero />
       <Introduction />

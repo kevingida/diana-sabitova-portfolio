@@ -28,7 +28,7 @@ const AboutMe = () => {
           projects, harmonizing minimalism and brutalism.
         </p>
         <p
-          className={`${dmSansRegular.className} lg:col-start-2 text-[20px] leading-[30px] lg:text-[34px] xl:text-[45px] uppercase h-[170px] lg:h-[267px]`}
+          className={`${dmSansRegular.className} lg:col-start-2 text-[20px] leading-[30px] lg:leading-[54px] lg:text-[34px] xl:text-[45px] uppercase h-[170px] lg:h-[267px]`}
         >
           My mission is to focus on making a human-centric projects, harmonizing
           minimalism and brutalism.

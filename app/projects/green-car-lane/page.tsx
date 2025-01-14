@@ -1,5 +1,4 @@
 import Contact from "@/components/Contact";
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 const GreenCarLanePage = () => {
@@ -70,8 +69,8 @@ const GreenCarLanePage = () => {
             </p>
             <ul className=" pl-8 list-decimal text-[#BCBCBC] text-[30px] leading-[47px]">
               <li>
-                Create a unified design language aligned with GreenCarLane's
-                brand identity
+                Create a unified design language aligned with
+                GreenCarLane&apos;s brand identity
               </li>
               <li>Improve content discoverability and navigation</li>
               <li>Develop a scalable article template system</li>
@@ -94,12 +93,13 @@ const GreenCarLanePage = () => {
               </p>
               <p className="text-[#BCBCBC] text-[30px] leading-[47px]">
                 The design process began with a comprehensive analysis of the
-                existing Press Release page and the company's digital ecosystem.
-                Designers carefully examined the current implementation,
-                identifying key areas that required improvement in visual
-                consistency and user experience. The research phase involved a
-                deep dive into GreenCarLane's brand identity, understanding the
-                core messaging around electric vehicle insights and technology.
+                existing Press Release page and the company&apos;s digital
+                ecosystem. Designers carefully examined the current
+                implementation, identifying key areas that required improvement
+                in visual consistency and user experience. The research phase
+                involved a deep dive into GreenCarLane&apos;s brand identity,
+                understanding the core messaging around electric vehicle
+                insights and technology.
               </p>
             </div>
           </div>
@@ -114,12 +114,12 @@ const GreenCarLanePage = () => {
               </p>
               <p className="text-[#BCBCBC] text-[30px] leading-[47px]">
                 This design phase is focused on creating a cohesive visual
-                language that aligns with GreenCarLane's brand identity. They
-                implemented a consistent color palette, typography, and design
-                elements that reflect the company's modern and innovative
-                approach to electric vehicle information. The redesign
-                emphasized clean, accessible layouts that make complex EV
-                information easy to digest.
+                language that aligns with GreenCarLane&apos;s brand identity.
+                They implemented a consistent color palette, typography, and
+                design elements that reflect the company&apos;s modern and
+                innovative approach to electric vehicle information. The
+                redesign emphasized clean, accessible layouts that make complex
+                EV information easy to digest.
               </p>
             </div>
           </div>

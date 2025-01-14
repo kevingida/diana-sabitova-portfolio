@@ -13,7 +13,7 @@ const robotoRegular = localFont({ src: "../font/Roboto-Regular.ttf" });
 
 const Introduction = () => {
   return (
-    <section className=" w-full pl-[120px] pt-[128px] z-50">
+    <section className=" w-full lg:pl-[60px] xl:pl-[120px] pt-[128px] z-50">
       <div className=" flex flex-row justify-start items-center gap-8">
         <p className={`${dmSansRegular.className} text-[24px] uppercase`}>
           scroll to explore

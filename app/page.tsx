@@ -14,26 +14,18 @@ export default function Home() {
   return (
     <div className=" max-w-screen-xl mx-auto bg-purple relative overflow-hidden w-full">
       <Bubble1
-        width={1404}
-        height={1813}
         z={-1}
-        className="absolute -top-60 -left-0"
+        className="absolute -top-60 -left-0 lg:w-[1004px] lg:h-[1413px] xl:w-[1404px] xl:h-[1813px]"
       />
       <Bubble2
-        width={1404}
-        height={1813}
         z={-1}
-        className="absolute top-[1500px] -right-80"
+        className="absolute top-[1500px] -right-80  lg:w-[1004px] lg:h-[1413px] xl:w-[1404px] xl:h-[1813px]"
       />
-      <Bubble3
-        width={804}
-        height={1213}
-        className="absolute top-[5250px] -right-20 z-50"
-      />
+      <Bubble3 className="absolute lg:top-[4500px] lg:-right-40 xl:top-[5250px] xl:-right-20 z-50 xl:w-[804px] xl:h-[1213px]" />
       <Bubble4
         width={804}
         height={1213}
-        className="absolute bottom-0 -left-40 z-50"
+        className="absolute lg:bottom-[100px] xl:bottom-0 lg:-left-[100px] xl:-left-40 z-50 lg:w-[604px] lg:h-[1013px] xl:w-[804px] xl:h-[1213px]"
       />
       <Navbar />
       <Hero />

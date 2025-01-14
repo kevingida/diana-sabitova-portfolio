@@ -9,7 +9,7 @@ const dmSansSemiBold = localFont({ src: "../font/DMSans-SemiBold.ttf" });
 
 const Project = () => {
   return (
-    <section className="w-full px-[120px] pt-[91px] pb-[245px] relative">
+    <section className="w-full lg:px-[60px] xl:px-[120px] pt-[91px] pb-[245px] relative">
       <h2 className={`${dmSansMedium.className} text-[60px]`}>Projects</h2>
       <p
         className={`${dmSansRegular.className} text-[24px] leading-[140%] w-[450px] pb-[91px]`}
@@ -21,7 +21,12 @@ const Project = () => {
       <ul className="grid grid-cols-2 gap-x-[76px] gap-y-[69px]">
         {projects.map((project, index) => (
           <li key={index}>
-            <Image src={project.image} alt={project.title} />
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={800}
+              height={680}
+            />
             <h3 className={`${dmSansSemiBold.className} text-[28px] pt-11`}>
               {project.title}
             </h3>

@@ -1,12 +1,17 @@
+"use client";
+import BackToHomepage from "@/components/BackToHomepage";
+import BackToTop from "@/components/BackToTop";
 import Contact from "@/components/Contact";
 import Cursor from "@/components/Cursor";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 const GreenCarLanePage = () => {
   return (
-    <>
-      <div className=" max-w-screen-xl mx-auto bg-raisinBlack w-full flex flex-col items-center px-4 lg:px-[100px] xl:px-[120px]">
+    <div className="relative">
+      <div className=" max-w-screen-xl mx-auto bg-raisinBlack w-full px-4 lg:px-[100px] xl:px-[120px]">
         <Cursor />
+        <Navbar color="white" />
         <Image
           src="/greenCarLane-hero-desktop.png"
           alt="greenCarLane hero image"
@@ -216,7 +221,9 @@ const GreenCarLanePage = () => {
         </div>
       </div>
       <Contact />
-    </>
+      <BackToTop className=" bottom-[550px] lg:bottom-[800px]" />
+      <BackToHomepage className="bottom-20" />
+    </div>
   );
 };
 

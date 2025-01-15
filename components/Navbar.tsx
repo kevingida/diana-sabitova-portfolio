@@ -5,29 +5,35 @@ import useScreenSize from "@/lib/useScreenSize";
 import Hamburger from "./svg/Hamburger";
 import { navbarProps } from "@/interface/Interface";
 import { navbarMenu } from "@/static/Static";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 const bicubik = localFont({ src: "../font/Bicubik.otf" });
 
-const Navbar: React.FC<navbarProps> = ({ handleScroll }) => {
+const Navbar: React.FC<navbarProps> = ({ color }) => {
   const { isMobile } = useScreenSize();
+  const router = useRouter();
   return (
-    <div className=" flex flex-row justify-between items-center top-0 left-0 right-0 lg:h-60 px-4 py-[60px] lg:px-[60px] xl:px-[120px] xl:py-[115px]  max-w-screen-xl mx-auto">
-      <div className={`${bicubik.className} text-[24px] lg:text-[48px]`}>
+    <div className="flex flex-row justify-between items-center relative z-50 top-0 left-0 right-0 lg:h-60 px-4 py-[60px]  max-w-screen-xl mx-auto">
+      <Link
+        className={`${bicubik.className} text-${color} text-[24px] lg:text-[48px]`}
+        href={"/"}
+      >
         DIANA SABITOVA
-      </div>
+      </Link>
       {isMobile ? (
         <button>
-          <Hamburger />
+          <Hamburger stroke={color} />
         </button>
       ) : (
         <ul className=" flex flex-row gap-12 text-[20px] font-light">
           {navbarMenu.map((menu, index) => (
             <li key={index}>
-              <button
-                onClick={async () => handleScroll && handleScroll(menu.value)}
-                className="uppercase"
+              <Link
+                href={`/#${menu.value}`}
+                className={` text-${color} uppercase`}
               >
                 {menu.label}
-              </button>
+              </Link>
             </li>
           ))}
         </ul>

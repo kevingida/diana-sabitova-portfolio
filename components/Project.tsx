@@ -31,8 +31,10 @@ const Project = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                width={800}
-                height={680}
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: "800px", height: "auto" }}
                 className="content-['caseStudy']"
               />
             </Link>

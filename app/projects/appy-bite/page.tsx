@@ -1,9 +1,12 @@
+"use client";
 import Navbar from "@/components/Navbar";
 import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
 import Contact from "@/components/Contact";
 import Cursor from "@/components/Cursor";
+import BackToTop from "@/components/BackToTop";
+import BackToHomepage from "@/components/BackToHomepage";
 
 const dmSansSemiBold = localFont({ src: "../../../font/DMSans-SemiBold.ttf" });
 const dmSansRegular = localFont({ src: "../../../font/DMSans-Regular.ttf" });
@@ -22,10 +25,11 @@ const exposure = localFont({ src: "../../../font/Exposure.otf" });
 
 const AppyBitePage = () => {
   return (
-    <>
-      <div className=" max-w-screen-xl mx-auto bg-white w-full flex flex-col items-center px-4 lg:px-[100px] xl:px-[120px] lg:pb-[110px] pt-[149px] lg:pt-[190px]">
-        <Navbar />
+    <div className="relative">
+      <div className=" relative max-w-screen-xl mx-auto bg-white w-full  px-4 lg:px-[100px] xl:px-[120px] lg:pb-[110px]">
         <Cursor />
+        <Navbar color="black" />
+
         <Image
           src="/appyBite-hero-desktop.png"
           alt="appyBite hero image"
@@ -96,7 +100,7 @@ const AppyBitePage = () => {
             alt="appyBite phone"
             width={497}
             height={1050}
-            className="absolute -bottom-[320px] right-[16px] w-[159px] h-[339px]  lg:relative lg:bottom-0 lg:right-0 lg:min-w-[497px] lg:h-[1050px]"
+            className="absolute top-[750px] right-[16px] w-[159px] h-[339px]  lg:relative lg:bottom-0 lg:right-0 lg:min-w-[497px] lg:h-[1050px]"
           />
         </div>
         <div className="flex flex-row justify-between lg:gap-[100px] xl:gap-[217px] py-8 lg:py-[75px]">
@@ -542,7 +546,9 @@ const AppyBitePage = () => {
         </div>
       </div>
       <Contact />
-    </>
+      <BackToTop className=" bottom-[550px] lg:bottom-[800px]" />
+      <BackToHomepage className="bottom-20" />
+    </div>
   );
 };
 

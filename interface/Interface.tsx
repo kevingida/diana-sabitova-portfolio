@@ -8,7 +8,7 @@ export interface bannerProps {
 }
 
 export interface navbarProps {
-  handleScroll?: (id: string) => void;
+  color: string;
 }
 
 export interface projectProps {
@@ -17,4 +17,8 @@ export interface projectProps {
 
 export interface cursorProps {
   isCaseStudy: boolean;
+}
+
+export interface BackToProps {
+  className: string;
 }

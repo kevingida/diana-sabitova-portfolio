@@ -1,8 +1,9 @@
+"use client";
 import { useEffect, useState } from "react";
 
 const useScreenSize = () => {
   const [screenSize, setScreenSize] = useState({
-    width: 0,
+    width: 1920,
     height: 0,
   });
   const isMobile = screenSize.width < 768;

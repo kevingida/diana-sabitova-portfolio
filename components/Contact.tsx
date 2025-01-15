@@ -19,11 +19,11 @@ const Contact = () => {
         let&apos;s connect!
       </h3>
       <Link
-        href={""}
+        href={"mailto:diana.sabitova.dr@gmail.com"}
         className=" w-[336px] h-[78px] lg:w-[400px] lg:h-[92px] bg-black text-white font-semibold flex justify-center items-center gap-2 text-[16px] lg:text-[20px] rounded-[46px]"
       >
         diana.sabitova.dr@gmail.com
-        <ArrowUpRight height={24} />
+        <ArrowUpRight height={24} stroke="white" fill="white" />
       </Link>
       <div className="flex flex-row gap-8 pt-8 lg:pt-0">
         {contact.map((contact, index) => (

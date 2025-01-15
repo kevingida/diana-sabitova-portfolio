@@ -10,7 +10,14 @@ const dmSansRegular = localFont({ src: "../../../font/DMSans-Regular.ttf" });
 const openSansSemiBold = localFont({
   src: "../../../font/OpenSans-SemiBold.ttf",
 });
+const openSansRegular = localFont({
+  src: "../../../font/OpenSans-Regular.ttf",
+});
 const interRegular = localFont({ src: "../../../font/Inter-Regular.otf" });
+const robotoRegular = localFont({ src: "../../../font/Roboto-Regular.ttf" });
+const robotoBold = localFont({ src: "../../../font/Roboto-Bold.ttf" });
+const robotoLight = localFont({ src: "../../../font/Roboto-Light.ttf" });
+const robotoMedium = localFont({ src: "../../../font/Roboto-Medium.ttf" });
 
 const AppyBitePage = () => {
   return (
@@ -291,25 +298,133 @@ const AppyBitePage = () => {
             height={1389}
           />
         </div>
-        <div className="flex flex-col justify-center items-center py-[94px]">
+        <div className="flex flex-col justify-center items-center py-[94px] w-full">
           <p
             className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
           >
             Typography & Colors
           </p>
-          <div>
+          <div className="flex flex-col justify-start items-start w-full">
             <p
               className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
             >
               Font Used
             </p>
+            <div className="grid grid-cols-[618px_auto] gap-x-[113px] pb-[65px]">
+              <p
+                className={`${robotoBold.className} text-spaceCadet text-[78px] leading-[125%] border-2 border-black w-[616px] h-[165px] flex items-center justify-center`}
+              >
+                Exposure [-40]
+              </p>
+              <p className={`${robotoRegular.className} text-[37px] `}>
+                <span className={`${robotoBold.className} text-[37px] `}>
+                  Exposure
+                </span>{" "}
+                is an extraordinary sans serif font. It have a better
+                readability and variety of options. I choose this font to show
+                creative approach of making hi-fi prototypes.
+              </p>
+              <p className=" col-start-2">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+              <p className=" col-start-2">abcdefghijklmnopqrstuvwxyz</p>
+              <p className=" col-start-2">1234567890</p>
+            </div>
+            <div className="grid grid-cols-[618px_auto] gap-x-[113px]">
+              <p
+                className={`${robotoBold.className} text-spaceCadet text-[78px] leading-[125%] border-2 border-black w-[302px] h-[165px] flex items-center justify-center`}
+              >
+                Roboto
+              </p>
+              <p className={`${robotoRegular.className} text-[37px] `}>
+                <span className={`${robotoBold.className} text-[37px] `}>
+                  Roboto
+                </span>{" "}
+                is a elegant and modern sans serif font. It is very neat and
+                clean. It have more readability and variety of options. That’s
+                why I used this font.
+              </p>
+              <p
+                className={`${robotoRegular.className} text-[37px] col-start-1`}
+              >
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ
+              </p>
+              <p
+                className={`${robotoRegular.className} text-[37px] col-start-1`}
+              >
+                abcdefghijklmnopqrstuvwxyz
+              </p>
+              <p
+                className={`${robotoRegular.className} text-[37px] col-start-1`}
+              >
+                1234567890
+              </p>
+              <div className=" w-full border-2  h-[244px] rounded-[33px] shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)] px-[100px] py-[46px] grid grid-cols-2 gap-x-32">
+                <p
+                  className={`${robotoBold.className} text-[38px] leading-[150%]`}
+                >
+                  Roboto Bold
+                </p>
+                <p
+                  className={`${robotoMedium.className} text-[38px] leading-[150%]`}
+                >
+                  Roboto Medium
+                </p>
+                <p
+                  className={`${robotoRegular.className} text-[38px] leading-[150%]`}
+                >
+                  Roboto Regular
+                </p>
+                <p
+                  className={`${robotoLight.className} text-[38px] leading-[150%]`}
+                >
+                  Roboto Light
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="flex flex-col justify-start items-start w-full">
             <p
               className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
             >
               Color Used
             </p>
+            <div className="flex flex-row justify-start items-center w-full gap-[142px]">
+              <div className="flex flex-col justify-center items-center">
+                <div className=" w-[229px] h-[244px] bg-[#DBFBB2] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
+                <p className={`${openSansRegular.className} text-[37px] pt-7`}>
+                  Primary Color
+                </p>
+                <p className={`${openSansRegular.className} text-[37px]`}>
+                  #DBFBB2
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <div className=" w-[229px] h-[244px] bg-[#B2FFDB] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
+                <p className={`${openSansRegular.className} text-[37px] pt-7`}>
+                  Secondary Color
+                </p>
+                <p className={`${openSansRegular.className} text-[37px]`}>
+                  #B2FFDB
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <div className=" w-[229px] h-[244px] bg-[#000000] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
+                <p className={`${openSansRegular.className} text-[37px] pt-7`}>
+                  Button Color
+                </p>
+                <p className={`${openSansRegular.className} text-[37px]`}>
+                  #000000
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <div className=" w-[229px] h-[244px] bg-[#FFFFFFF] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
+                <p className={`${openSansRegular.className} text-[37px] pt-7`}>
+                  Text Color
+                </p>
+                <p className={`${openSansRegular.className} text-[37px]`}>
+                  #FFFFFFF
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center py-[94px]">

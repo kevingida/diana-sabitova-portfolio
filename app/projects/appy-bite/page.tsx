@@ -18,11 +18,12 @@ const robotoRegular = localFont({ src: "../../../font/Roboto-Regular.ttf" });
 const robotoBold = localFont({ src: "../../../font/Roboto-Bold.ttf" });
 const robotoLight = localFont({ src: "../../../font/Roboto-Light.ttf" });
 const robotoMedium = localFont({ src: "../../../font/Roboto-Medium.ttf" });
+const exposure = localFont({ src: "../../../font/Exposure.otf" });
 
 const AppyBitePage = () => {
   return (
     <>
-      <div className=" max-w-screen-xl mx-auto bg-white w-full flex flex-col items-center lg:px-[100px] xl:px-[120px] pb-[110px] pt-[190px]">
+      <div className=" max-w-screen-xl mx-auto bg-white w-full flex flex-col items-center px-4 lg:px-[100px] xl:px-[120px] lg:pb-[110px] pt-[149px] lg:pt-[190px]">
         <Navbar />
         <Cursor />
         <Image
@@ -33,14 +34,14 @@ const AppyBitePage = () => {
         />
         <div className="flex flex-row justify-between lg:gap-[100px] xl:gap-[217px] py-[75px]">
           <div>
-            <div className="pb-12">
+            <div className=" pb-6 lg:pb-12">
               <p
-                className={`${dmSansSemiBold.className} text-[54px] leading-[125%] text-spaceCadet`}
+                className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] text-spaceCadet pb-2`}
               >
                 Product Overview
               </p>
               <p
-                className={`${dmSansRegular.className} text-[32px] leading-[150%]`}
+                className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%]`}
               >
                 AppyBite is a food delivery service that aims to revolutionize
                 the way people approach healthy eating. Launched with a strong
@@ -53,38 +54,38 @@ const AppyBitePage = () => {
                 cooking.
               </p>
             </div>
-            <div className="pb-12">
+            <div className=" pb-6 lg:pb-12">
               <p
-                className={`${dmSansSemiBold.className} text-[54px] leading-[125%] text-spaceCadet`}
+                className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] text-spaceCadet pb-2`}
               >
                 Duration
               </p>
               <p
-                className={`${dmSansRegular.className} text-[32px] leading-[150%]`}
+                className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%]`}
               >
                 6 Weeks
               </p>
             </div>
-            <div className="pb-12">
+            <div className=" pb-6 lg:pb-12">
               <p
-                className={`${dmSansSemiBold.className} text-[54px] leading-[125%] text-spaceCadet`}
+                className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] text-spaceCadet pb-2 `}
               >
                 My role
               </p>
               <p
-                className={`${dmSansRegular.className} text-[32px] leading-[150%]`}
+                className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%] w-[150px] lg:w-full`}
               >
                 UX Designer, UI Designer
               </p>
             </div>
-            <div className="pb-12">
+            <div className=" pb-6 lg:pb-12">
               <p
-                className={`${dmSansSemiBold.className} text-[54px] leading-[125%] text-spaceCadet`}
+                className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] text-spaceCadet pb-2`}
               >
                 Tools used
               </p>
               <p
-                className={`${dmSansRegular.className} text-[32px] leading-[150%]`}
+                className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%] w-[150px] lg:w-full`}
               >
                 Figma, Google forms, Canva, Miro, Adobe illustrator
               </p>
@@ -95,31 +96,31 @@ const AppyBitePage = () => {
             alt="appyBite phone"
             width={497}
             height={1050}
-            className="lg:min-w-[497px]"
+            className="absolute -bottom-[320px] right-[16px] w-[159px] h-[339px]  lg:relative lg:bottom-0 lg:right-0 lg:min-w-[497px] lg:h-[1050px]"
           />
         </div>
-        <div className="flex flex-row justify-between lg:gap-[100px] xl:gap-[217px] py-[75px]">
+        <div className="flex flex-row justify-between lg:gap-[100px] xl:gap-[217px] py-8 lg:py-[75px]">
           <Image
             src="/appyBite-phone.png"
             alt="appyBite phone"
             width={497}
             height={1050}
-            className="lg:min-w-[497px]"
+            className="hidden lg:block lg:min-w-[497px]"
           />
           <div>
             <div className="pb-12">
               <p
-                className={`${dmSansSemiBold.className} text-[54px] leading-[125%] text-spaceCadet`}
+                className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] text-spaceCadet pb-2`}
               >
                 Problem Statement
               </p>
               <p
-                className={`${dmSansRegular.className} text-[32px] leading-[150%]`}
+                className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%]`}
               >
                 Many busy individuals face difficulties in:
               </p>
               <ul
-                className={`${dmSansRegular.className} text-[32px] leading-[150%] list-disc pl-8`}
+                className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%] list-disc pl-8`}
               >
                 <li>Finding time to plan and prepare healthy meals</li>
                 <li>Maintaining specific dietary requirements</li>
@@ -131,12 +132,12 @@ const AppyBitePage = () => {
             </div>
             <div className="pb-12">
               <p
-                className={`${dmSansSemiBold.className} text-[54px] leading-[125%] text-spaceCadet`}
+                className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] text-spaceCadet pb-2`}
               >
                 Possible solution
               </p>
               <ul
-                className={`${dmSansRegular.className} text-[32px] leading-[150%] list-decimal pl-8`}
+                className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%] list-decimal pl-8`}
               >
                 <li>
                   Finding time to plan and prepare healthy meals:
@@ -174,14 +175,14 @@ const AppyBitePage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center py-[94px]">
+        <div className="flex flex-col justify-start items-start lg:justify-center lg:items-center lg:py-[94px]">
           <p
-            className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[45px] text-spaceCadet`}
+            className={`${openSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] pb-6 lg:pb-[45px] text-spaceCadet`}
           >
             Design Process
           </p>
           <p
-            className={`${interRegular.className} text-[32px] leading-[150%] pb-[80px]`}
+            className={`${interRegular.className} text-[14px] lg:text-[32px] leading-[150%] pb-6 lg:pb-[80px]`}
           >
             The design process section is a crucial part of your UI/UX case
             study. It showcases the problem-solving methodology and the steps
@@ -192,16 +193,24 @@ const AppyBitePage = () => {
             alt="appyBite design process"
             width={1651}
             height={302}
+            className="hidden lg:block"
+          />
+          <Image
+            src="/appyBite-design-process-mobile.png"
+            alt="appyBite design process"
+            width={1651}
+            height={302}
+            className="lg:hidden"
           />
         </div>
-        <div className="flex flex-col justify-center items-center py-[94px]">
+        <div className="flex flex-col justify-start items-start lg:justify-center lg:items-center pt-12 lg:py-[94px]">
           <p
-            className={`${dmSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
+            className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] pb-6 lg:pb-[50px] text-spaceCadet`}
           >
             Competitive Analysis
           </p>
           <p
-            className={`${dmSansRegular.className} text-[32px] leading-[150%] pb-[66px]`}
+            className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%] pb-6 lg:pb-[66px]`}
           >
             AppyBite operates in a competitive market, with several other
             services that compete for the attention of health-conscious
@@ -225,14 +234,14 @@ const AppyBitePage = () => {
             height={880}
           />
         </div>
-        <div className="flex flex-col justify-center items-center py-[94px]">
+        <div className="flex flex-col justify-center items-center pt-12 lg:py-[94px]">
           <p
-            className={`${dmSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
+            className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] pb-4 lg:pb-[50px] text-spaceCadet`}
           >
             User Persona
           </p>
           <p
-            className={`${dmSansRegular.className} text-[32px] leading-[150%] pb-[66px]`}
+            className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%] pb-6 lg:pb-[66px]`}
           >
             The user persona section provides concise profiles of typical Vida
             EV users, offering insights into their demographics, lifestyle,
@@ -279,14 +288,14 @@ const AppyBitePage = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center py-[94px]">
+        <div className="flex flex-col justify-center items-center pt-12 lg:py-[94px]">
           <p
-            className={`${dmSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
+            className={`${dmSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] pb-4 lg:pb-[50px] text-spaceCadet`}
           >
             User Empathy
           </p>
           <p
-            className={`${dmSansRegular.className} text-[32px] leading-[150%] pb-[66px]`}
+            className={`${dmSansRegular.className} text-[14px] lg:text-[32px] leading-[150%] pb-6 lg:pb-[66px]`}
           >
             I empathize with the users of Vida EV by understanding their
             emotions, needs, and frustrations. By putting ourselves in their
@@ -302,37 +311,51 @@ const AppyBitePage = () => {
         </div>
         <div className="flex flex-col justify-center items-center py-[94px] w-full">
           <p
-            className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
+            className={`${openSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
           >
             Typography & Colors
           </p>
           <div className="flex flex-col justify-start items-start w-full">
             <p
-              className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
+              className={`${openSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] pb-6 lg:pb-[50px] text-spaceCadet`}
             >
               Font Used
             </p>
-            <div className="grid lg:grid-cols-[550px_auto] xl:grid-cols-[618px_auto] lg:gap-x-[80px] xl:gap-x-[113px] pb-[65px]">
+            <div className="grid grid-cols-1 lg:grid-cols-[550px_auto] xl:grid-cols-[618px_auto] gap-6 lg:gap-y-0 lg:gap-x-[80px] xl:gap-x-[113px] pb-[65px]">
               <p
-                className={`${robotoBold.className} text-spaceCadet text-[64px] xl:text-[78px] leading-[125%] border-2 border-black lg:w-[520px] xl:w-[616px] lg:h-[120px] xl:h-[165px] flex items-center justify-center`}
+                className={`${robotoBold.className}  text-spaceCadet text-[24px] lg:text-[64px] xl:text-[78px] leading-[125%] border-2 border-black w-[215px] h-24 lg:w-[520px] xl:w-[616px] lg:h-[120px] xl:h-[165px] flex items-center justify-center`}
               >
                 Exposure [-40]
               </p>
               <p
-                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] leading-tight `}
+                className={`${robotoRegular.className} row-start-3 lg:row-start-1 lg:col-start-2 lg:text-[32px] xl:text-[37px] leading-tight pb-0 lg:pb-[57px] `}
               >
                 <span className={`${robotoBold.className}`}>Exposure</span> is
                 an extraordinary sans serif font. It have a better readability
                 and variety of options. I choose this font to show creative
                 approach of making hi-fi prototypes.
               </p>
-              <p className=" col-start-2">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-              <p className=" col-start-2">abcdefghijklmnopqrstuvwxyz</p>
-              <p className=" col-start-2">1234567890</p>
+              <div>
+                <p
+                  className={`${exposure.className} lg:col-start-2 lg:text-[32px] xl:text-[37px]`}
+                >
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                </p>
+                <p
+                  className={`${exposure.className} lg:col-start-2 lg:text-[32px] xl:text-[37px]`}
+                >
+                  abcdefghijklmnopqrstuvwxyz
+                </p>
+                <p
+                  className={`${exposure.className} lg:col-start-2 lg:text-[32px] xl:text-[37px]`}
+                >
+                  1234567890
+                </p>
+              </div>
             </div>
-            <div className="grid lg:grid-cols-[550px_auto] xl:grid-cols-[618px_auto] lg:gap-x-[80px] xl:gap-x-[113px]">
+            <div className="grid lg:grid-cols-[550px_auto] xl:grid-cols-[618px_auto] gap-6 lg:gap-y-0 lg:gap-x-[80px] xl:gap-x-[113px]">
               <p
-                className={`${robotoBold.className} text-spaceCadet text-[64px] xl:text-[78px] leading-[125%] border-2 border-black lg:w-[250px] xl:w-[302px] lg:h-[120px] xl:h-[165px] flex items-center justify-center`}
+                className={`${robotoBold.className} text-spaceCadet text-[24px] lg:text-[64px] xl:text-[78px] leading-[125%] border-2 border-black w-[215px] h-24 lg:w-[250px] xl:w-[302px] lg:h-[120px] xl:h-[165px] flex items-center justify-center`}
               >
                 Roboto
               </p>
@@ -344,100 +367,102 @@ const AppyBitePage = () => {
                 It have more readability and variety of options. That’s why I
                 used this font.
               </p>
-              <p
-                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
-              >
-                ABCDEFGHIJKLMNOPQRSTUVWXYZ
-              </p>
-              <p
-                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
-              >
-                abcdefghijklmnopqrstuvwxyz
-              </p>
-              <p
-                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
-              >
-                1234567890
-              </p>
-              <div className=" w-full border-2 h-[244px] rounded-[33px] shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]  lg:px-[50px] lg:py-[26px] xl:px-[100px] xl:py-[46px] grid grid-cols-2 lg:gap-x-8 xl:gap-x-32 items-center">
+              <div>
                 <p
-                  className={`${robotoBold.className} lg:text-[32px] xl:text-[38px] leading-[150%]`}
+                  className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
+                >
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                </p>
+                <p
+                  className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
+                >
+                  abcdefghijklmnopqrstuvwxyz
+                </p>
+                <p
+                  className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
+                >
+                  1234567890
+                </p>
+              </div>
+              <div className=" lg:mt-32 w-full border-2 h-[173px] lg:h-[244px] rounded-[33px] shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)] px-[19px] py-[42px] lg:px-[50px] lg:py-[26px] xl:px-[100px] xl:py-[46px] grid grid-cols-2 lg:gap-x-8 xl:gap-x-32 items-center">
+                <p
+                  className={`${robotoBold.className} text-[20px] lg:text-[32px] xl:text-[38px] leading-[150%]`}
                 >
                   Roboto Bold
                 </p>
                 <p
-                  className={`${robotoMedium.className} lg:text-[32px] xl:text-[38px] leading-[150%]`}
+                  className={`${robotoMedium.className} text-[20px] lg:text-[32px] xl:text-[38px] leading-[150%]`}
                 >
                   Roboto Medium
                 </p>
                 <p
-                  className={`${robotoRegular.className} lg:text-[32px] xl:text-[38px] leading-[150%]`}
+                  className={`${robotoRegular.className} text-[20px] lg:text-[32px] xl:text-[38px] leading-[150%]`}
                 >
                   Roboto Regular
                 </p>
                 <p
-                  className={`${robotoLight.className} lg:text-[32px] xl:text-[38px] leading-[150%]`}
+                  className={`${robotoLight.className} text-[20px] lg:text-[32px] xl:text-[38px] leading-[150%]`}
                 >
                   Roboto Light
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-start items-start w-full lg:mt-[100px] xl:mt-[200px]">
+          <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start w-full lg:mt-[100px] xl:mt-[200px] pt-12 lg:pt-0">
             <p
-              className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
+              className={`${openSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
             >
               Color Used
             </p>
-            <div className="flex flex-row justify-start items-center w-full lg:gap-12 xl:gap-[142px]">
+            <div className="flex flex-row justify-center lg:justify-start items-center lg:w-full gap-4 flex-wrap w-4/5 lg:gap-12 xl:gap-[142px]">
               <div className="flex flex-col justify-center items-center">
-                <div className=" w-[229px] h-[244px] bg-[#DBFBB2] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
+                <div className=" w-[100px] h-[100px] lg:w-[229px] lg:h-[244px] bg-[#DBFBB2] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
                 <p
-                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px] pt-7`}
+                  className={`${openSansRegular.className} text-[12px] lg:text-[32px] xl:text-[37px] pt-7`}
                 >
                   Primary Color
                 </p>
                 <p
-                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px]`}
+                  className={`${openSansRegular.className} text-[12px] lg:text-[32px] xl:text-[37px]`}
                 >
                   #DBFBB2
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <div className=" w-[229px] h-[244px] bg-[#B2FFDB] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
+                <div className=" w-[100px] h-[100px] lg:w-[229px] lg:h-[244px] bg-[#B2FFDB] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
                 <p
-                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px] pt-7`}
+                  className={`${openSansRegular.className} text-[12px] lg:text-[32px] xl:text-[37px] pt-7`}
                 >
                   Secondary Color
                 </p>
                 <p
-                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px]`}
+                  className={`${openSansRegular.className} text-[12px] lg:text-[32px] xl:text-[37px]`}
                 >
                   #B2FFDB
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <div className=" w-[229px] h-[244px] bg-[#000000] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
+                <div className=" w-[100px] h-[100px] lg:w-[229px] lg:h-[244px] bg-[#000000] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
                 <p
-                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px] pt-7`}
+                  className={`${openSansRegular.className} text-[12px] lg:text-[32px] xl:text-[37px] pt-7`}
                 >
                   Button Color
                 </p>
                 <p
-                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px]`}
+                  className={`${openSansRegular.className} text-[12px] lg:text-[32px] xl:text-[37px]`}
                 >
                   #000000
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <div className=" w-[229px] h-[244px] bg-[#FFFFFFF] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
+                <div className=" w-[100px] h-[100px] lg:w-[229px] lg:h-[244px] bg-[#FFFFFFF] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
                 <p
-                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px] pt-7`}
+                  className={`${openSansRegular.className} text-[12px] lg:text-[32px] xl:text-[37px] pt-7`}
                 >
                   Text Color
                 </p>
                 <p
-                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px]`}
+                  className={`${openSansRegular.className} text-[12px] lg:text-[32px] xl:text-[37px]`}
                 >
                   #FFFFFFF
                 </p>
@@ -445,9 +470,9 @@ const AppyBitePage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center py-[94px]">
+        <div className="flex flex-col justify-center items-center pb-12 lg:py-[94px]">
           <p
-            className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
+            className={`${openSansSemiBold.className} text-[24px] lg:text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
           >
             Low Fidelity Wireframes
           </p>
@@ -459,13 +484,13 @@ const AppyBitePage = () => {
           />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto flex flex-col justify-center items-center lg:px-[100px] xl:px-[120px] py-[117px] bg-purple w-full">
+      <div className="max-w-screen-xl mx-auto flex flex-col justify-center items-center px-4 lg:px-[100px] xl:px-[120px] pt-12 lg:py-[117px] bg-purple w-full">
         <p
-          className={`${openSansSemiBold.className} text-[60px] leading-[125%] pb-[50px] text-white`}
+          className={`${openSansSemiBold.className} text-[24px] lg:text-[60px] leading-[125%] pb-[50px] text-white`}
         >
           Visual Design
         </p>
-        <div className=" grid grid-cols-3 gap-x-[53px] gap-y-[106px]">
+        <div className=" grid grid-cols-3 gap-x-4 gap-y-8 lg:gap-x-[53px] lg:gap-y-[106px]">
           <Image
             src="/appyBite-visual-design-1.png"
             alt="appyBite visual design 1"

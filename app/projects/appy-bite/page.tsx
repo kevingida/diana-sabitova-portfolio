@@ -22,7 +22,7 @@ const robotoMedium = localFont({ src: "../../../font/Roboto-Medium.ttf" });
 const AppyBitePage = () => {
   return (
     <>
-      <div className=" max-w-screen-xl mx-auto bg-white w-full flex flex-col items-center px-[120px] pb-[110px] pt-[190px]">
+      <div className=" max-w-screen-xl mx-auto bg-white w-full flex flex-col items-center lg:px-[100px] xl:px-[120px] pb-[110px] pt-[190px]">
         <Navbar />
         <Cursor />
         <Image
@@ -31,7 +31,7 @@ const AppyBitePage = () => {
           width={1680}
           height={994}
         />
-        <div className="flex flex-row justify-between gap-[217px] py-[75px]">
+        <div className="flex flex-row justify-between lg:gap-[100px] xl:gap-[217px] py-[75px]">
           <div>
             <div className="pb-12">
               <p
@@ -95,14 +95,16 @@ const AppyBitePage = () => {
             alt="appyBite phone"
             width={497}
             height={1050}
+            className="lg:min-w-[497px]"
           />
         </div>
-        <div className="flex flex-row justify-between gap-[217px] py-[75px]">
+        <div className="flex flex-row justify-between lg:gap-[100px] xl:gap-[217px] py-[75px]">
           <Image
             src="/appyBite-phone.png"
             alt="appyBite phone"
             width={497}
             height={1050}
+            className="lg:min-w-[497px]"
           />
           <div>
             <div className="pb-12">
@@ -239,13 +241,13 @@ const AppyBitePage = () => {
             ensuring that Vida EV effectively meets the diverse needs of its
             target audience.
           </p>
-          <div className="grid grid-cols-[694px_auto] grid-rows-[auto_auto_auto_auto]">
+          <div className="grid lg:grid-cols-[594px_auto] xl:grid-cols-[694px_auto] xl:grid-rows-[auto_auto_auto_auto]">
             <Image
               src="/appyBite-user-pesona-bio.png"
               alt="appyBite user pesona bio"
               width={695}
               height={1902}
-              className=" row-span-4 col-start-1"
+              className=" row-span-5 col-start-1 lg:w-[594px] lg:h-[1702px] xl:w-[694px] xl:h-[1902px]"
             />
             <Image
               src="/appyBite-user-pesona-goals.png"
@@ -310,117 +312,133 @@ const AppyBitePage = () => {
             >
               Font Used
             </p>
-            <div className="grid grid-cols-[618px_auto] gap-x-[113px] pb-[65px]">
+            <div className="grid lg:grid-cols-[550px_auto] xl:grid-cols-[618px_auto] lg:gap-x-[80px] xl:gap-x-[113px] pb-[65px]">
               <p
-                className={`${robotoBold.className} text-spaceCadet text-[78px] leading-[125%] border-2 border-black w-[616px] h-[165px] flex items-center justify-center`}
+                className={`${robotoBold.className} text-spaceCadet text-[64px] xl:text-[78px] leading-[125%] border-2 border-black lg:w-[520px] xl:w-[616px] lg:h-[120px] xl:h-[165px] flex items-center justify-center`}
               >
                 Exposure [-40]
               </p>
-              <p className={`${robotoRegular.className} text-[37px] `}>
-                <span className={`${robotoBold.className} text-[37px] `}>
-                  Exposure
-                </span>{" "}
-                is an extraordinary sans serif font. It have a better
-                readability and variety of options. I choose this font to show
-                creative approach of making hi-fi prototypes.
+              <p
+                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] leading-tight `}
+              >
+                <span className={`${robotoBold.className}`}>Exposure</span> is
+                an extraordinary sans serif font. It have a better readability
+                and variety of options. I choose this font to show creative
+                approach of making hi-fi prototypes.
               </p>
               <p className=" col-start-2">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
               <p className=" col-start-2">abcdefghijklmnopqrstuvwxyz</p>
               <p className=" col-start-2">1234567890</p>
             </div>
-            <div className="grid grid-cols-[618px_auto] gap-x-[113px]">
+            <div className="grid lg:grid-cols-[550px_auto] xl:grid-cols-[618px_auto] lg:gap-x-[80px] xl:gap-x-[113px]">
               <p
-                className={`${robotoBold.className} text-spaceCadet text-[78px] leading-[125%] border-2 border-black w-[302px] h-[165px] flex items-center justify-center`}
+                className={`${robotoBold.className} text-spaceCadet text-[64px] xl:text-[78px] leading-[125%] border-2 border-black lg:w-[250px] xl:w-[302px] lg:h-[120px] xl:h-[165px] flex items-center justify-center`}
               >
                 Roboto
               </p>
-              <p className={`${robotoRegular.className} text-[37px] `}>
-                <span className={`${robotoBold.className} text-[37px] `}>
-                  Roboto
-                </span>{" "}
-                is a elegant and modern sans serif font. It is very neat and
-                clean. It have more readability and variety of options. That’s
-                why I used this font.
+              <p
+                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] leading-tight `}
+              >
+                <span className={`${robotoBold.className}`}>Roboto</span> is a
+                elegant and modern sans serif font. It is very neat and clean.
+                It have more readability and variety of options. That’s why I
+                used this font.
               </p>
               <p
-                className={`${robotoRegular.className} text-[37px] col-start-1`}
+                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
               >
                 ABCDEFGHIJKLMNOPQRSTUVWXYZ
               </p>
               <p
-                className={`${robotoRegular.className} text-[37px] col-start-1`}
+                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
               >
                 abcdefghijklmnopqrstuvwxyz
               </p>
               <p
-                className={`${robotoRegular.className} text-[37px] col-start-1`}
+                className={`${robotoRegular.className} lg:text-[32px] xl:text-[37px] col-start-1`}
               >
                 1234567890
               </p>
-              <div className=" w-full border-2  h-[244px] rounded-[33px] shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)] px-[100px] py-[46px] grid grid-cols-2 gap-x-32">
+              <div className=" w-full border-2 h-[244px] rounded-[33px] shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]  lg:px-[50px] lg:py-[26px] xl:px-[100px] xl:py-[46px] grid grid-cols-2 lg:gap-x-8 xl:gap-x-32 items-center">
                 <p
-                  className={`${robotoBold.className} text-[38px] leading-[150%]`}
+                  className={`${robotoBold.className} lg:text-[32px] xl:text-[38px] leading-[150%]`}
                 >
                   Roboto Bold
                 </p>
                 <p
-                  className={`${robotoMedium.className} text-[38px] leading-[150%]`}
+                  className={`${robotoMedium.className} lg:text-[32px] xl:text-[38px] leading-[150%]`}
                 >
                   Roboto Medium
                 </p>
                 <p
-                  className={`${robotoRegular.className} text-[38px] leading-[150%]`}
+                  className={`${robotoRegular.className} lg:text-[32px] xl:text-[38px] leading-[150%]`}
                 >
                   Roboto Regular
                 </p>
                 <p
-                  className={`${robotoLight.className} text-[38px] leading-[150%]`}
+                  className={`${robotoLight.className} lg:text-[32px] xl:text-[38px] leading-[150%]`}
                 >
                   Roboto Light
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-start items-start w-full">
+          <div className="flex flex-col justify-start items-start w-full lg:mt-[100px] xl:mt-[200px]">
             <p
               className={`${openSansSemiBold.className} text-[54px] leading-[125%] pb-[50px] text-spaceCadet`}
             >
               Color Used
             </p>
-            <div className="flex flex-row justify-start items-center w-full gap-[142px]">
+            <div className="flex flex-row justify-start items-center w-full lg:gap-12 xl:gap-[142px]">
               <div className="flex flex-col justify-center items-center">
                 <div className=" w-[229px] h-[244px] bg-[#DBFBB2] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
-                <p className={`${openSansRegular.className} text-[37px] pt-7`}>
+                <p
+                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px] pt-7`}
+                >
                   Primary Color
                 </p>
-                <p className={`${openSansRegular.className} text-[37px]`}>
+                <p
+                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px]`}
+                >
                   #DBFBB2
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center">
                 <div className=" w-[229px] h-[244px] bg-[#B2FFDB] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
-                <p className={`${openSansRegular.className} text-[37px] pt-7`}>
+                <p
+                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px] pt-7`}
+                >
                   Secondary Color
                 </p>
-                <p className={`${openSansRegular.className} text-[37px]`}>
+                <p
+                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px]`}
+                >
                   #B2FFDB
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center">
                 <div className=" w-[229px] h-[244px] bg-[#000000] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
-                <p className={`${openSansRegular.className} text-[37px] pt-7`}>
+                <p
+                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px] pt-7`}
+                >
                   Button Color
                 </p>
-                <p className={`${openSansRegular.className} text-[37px]`}>
+                <p
+                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px]`}
+                >
                   #000000
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center">
                 <div className=" w-[229px] h-[244px] bg-[#FFFFFFF] rounded-3xl shadow-[0px_3px_13px_0px_rgba(0,_0,_0,_0.1)]" />
-                <p className={`${openSansRegular.className} text-[37px] pt-7`}>
+                <p
+                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px] pt-7`}
+                >
                   Text Color
                 </p>
-                <p className={`${openSansRegular.className} text-[37px]`}>
+                <p
+                  className={`${openSansRegular.className}  lg:text-[32px] xl:text-[37px]`}
+                >
                   #FFFFFFF
                 </p>
               </div>
@@ -441,7 +459,7 @@ const AppyBitePage = () => {
           />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto flex flex-col justify-center items-center py-[117px] bg-purple w-full">
+      <div className="max-w-screen-xl mx-auto flex flex-col justify-center items-center lg:px-[100px] xl:px-[120px] py-[117px] bg-purple w-full">
         <p
           className={`${openSansSemiBold.className} text-[60px] leading-[125%] pb-[50px] text-white`}
         >

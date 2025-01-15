@@ -1,10 +1,12 @@
 import Contact from "@/components/Contact";
+import Cursor from "@/components/Cursor";
 import Image from "next/image";
 
 const GreenCarLanePage = () => {
   return (
     <>
-      <div className=" max-w-screen-xl mx-auto bg-raisinBlack w-full flex flex-col items-center px-[120px]">
+      <div className=" max-w-screen-xl mx-auto bg-raisinBlack w-full flex flex-col items-center lg:px-[100px] xl:px-[120px]">
+        <Cursor />
         <Image
           src="/greenCarLane-hero-desktop.png"
           alt="greenCarLane hero image"
@@ -12,11 +14,11 @@ const GreenCarLanePage = () => {
           height={994}
         />
         <div className="flex flex-row justify-between items-center w-full mt-12 mb-[120px] h-[720px] ">
-          <div className=" w-[1041px] h-full bg-saladGreen rounded-[50px] px-[65px] py-[90px] text-darkPurple">
+          <div className=" lg:w-[770px] xl:w-[1041px] h-full bg-saladGreen rounded-[50px] lg:px-12 xl:px-[65px] lg:py-[60px] xl:py-[90px] text-darkPurple">
             <p className=" text-[24px] font-medium leading-[52px] pb-[58px]">
               A UX/UI Case Study
             </p>
-            <p className="text-[60px] leading-[60px] pb-[230px]">
+            <p className=" lg:text-[48px] xl:text-[60px] leading-[60px] pb-[230px]">
               GreenCarLane Knowledge Hub Redesign
             </p>
             <div className="grid grid-cols-[170px_auto] gap-y-4 text-[24px]">
@@ -26,9 +28,9 @@ const GreenCarLanePage = () => {
               <p>Junior UX/UI Designer</p>
             </div>
           </div>
-          <div className=" w-[615px] h-full bg-purple rounded-[50px] px-[60px] py-[90px] text-darkPurple flex flex-col gap-8">
+          <div className=" lg:w-[450px] xl:w-[615px] h-full bg-purple rounded-[50px] lg:px-12 xl:px-[60px] lg:py-[60px] xl:py-[90px] text-darkPurple flex flex-col gap-8">
             <p className=" text-[24px] leading-[36px]">Project Overview</p>
-            <p className=" text-[#331386] text-[24px] leading-[36px]">
+            <p className=" text-[#331386] lg:text-[20px] xl:text-[24px] leading-[36px]">
               As a junior UX/UI designer at GreenCarLane, I was tasked with
               redesigning the Press Release (Knowledge Hub) page to improve user
               experience and align with brand standards. The project focused on

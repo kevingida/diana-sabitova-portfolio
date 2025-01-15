@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
 import Contact from "@/components/Contact";
+import Cursor from "@/components/Cursor";
 
 const dmSansSemiBold = localFont({ src: "../../../font/DMSans-SemiBold.ttf" });
 const dmSansRegular = localFont({ src: "../../../font/DMSans-Regular.ttf" });
@@ -16,6 +17,7 @@ const AppyBitePage = () => {
     <>
       <div className=" max-w-screen-xl mx-auto bg-white w-full flex flex-col items-center px-[120px] pb-[110px] pt-[190px]">
         <Navbar />
+        <Cursor />
         <Image
           src="/appyBite-hero-desktop.png"
           alt="appyBite hero image"

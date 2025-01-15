@@ -9,6 +9,7 @@ export interface bannerProps {
 
 export interface navbarProps {
   color: string;
+  bgColor?: string;
 }
 
 export interface projectProps {

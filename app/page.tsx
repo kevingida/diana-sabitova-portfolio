@@ -31,7 +31,7 @@ export default function Home() {
         className="absolute bottom-[120px] -left-[120px] w-[300px] lg:bottom-[100px] xl:bottom-0 lg:-left-[100px] xl:-left-40 z-10 lg:w-[604px] lg:h-[1013px] xl:w-[804px] xl:h-[1213px]"
       />
       <Cursor />
-      <Navbar color="black" />
+      <Navbar color="black" bgColor="purple" />
       <Hero />
       <Introduction />
       <Banner

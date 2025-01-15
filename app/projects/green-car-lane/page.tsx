@@ -9,9 +9,9 @@ import Image from "next/image";
 const GreenCarLanePage = () => {
   return (
     <div className="relative">
-      <div className=" max-w-screen-xl mx-auto bg-raisinBlack w-full px-4 lg:px-[100px] xl:px-[120px]">
+      <div className=" relative max-w-screen-xl mx-auto bg-raisinBlack w-full px-4 lg:px-[100px] xl:px-[120px]">
         <Cursor />
-        <Navbar color="white" />
+        <Navbar color="white" bgColor="raisinBlack" />
         <Image
           src="/greenCarLane-hero-desktop.png"
           alt="greenCarLane hero image"
@@ -48,7 +48,7 @@ const GreenCarLanePage = () => {
           </div>
         </div>
         <div className=" w-full flex flex-col lg:flex-row justify-start items-start">
-          <p className="text-white text-[20px] lg:text-[30px] leading-[60px] w-[625px] pl-4 lg:pl-0">
+          <p className="text-white text-[20px] lg:text-[30px] leading-[60px] lg:w-[625px] pl-4 lg:pl-0">
             Problem Statement
           </p>
           <ul className="list-disc text-[#BCBCBC] text-[14px] lg:text-[30px] leading-[24px] lg:leading-[47px] pl-10 lg:pl-0">

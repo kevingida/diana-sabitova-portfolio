@@ -63,7 +63,7 @@ const AboutMe = () => {
       <Link
         href="https://drive.google.com/file/d/1Cz3ZCBBi_nrJbXH8A5gR4hXOZwqO8EE2/view"
         target="_blank"
-        className=" z-50 flex self-center justify-center items-center uppercase w-[351px] lg:w-[301px] h-[80px] lg:h-[94px] bg-black text-white text-[24px] lg:text-[30px] shadow-[10px_10px_0px_0px_rgba(0,0,0,0.3)]"
+        className=" z-30 flex self-center justify-center items-center uppercase w-[351px] lg:w-[301px] h-[80px] lg:h-[94px] bg-black text-white text-[24px] lg:text-[30px] shadow-[10px_10px_0px_0px_rgba(0,0,0,0.3)]"
       >
         my resume
       </Link>

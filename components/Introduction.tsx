@@ -13,8 +13,8 @@ const robotoRegular = localFont({ src: "../font/Roboto-Regular.ttf" });
 
 const Introduction = () => {
   return (
-    <section className=" w-full pl-4 lg:pl-[60px] xl:pl-[120px] pt-12 lg:pt-[128px] z-50">
-      <div className=" flex flex-row justify-start items-center gap-5 lg:gap-8">
+    <section className=" w-full  pt-12 lg:pt-[128px] z-20">
+      <div className=" flex flex-row justify-start items-center gap-5 lg:gap-8 lg:pl-[60px] xl:pl-[120px]">
         <p
           className={`${dmSansRegular.className} text-[20px] lg:text-[24px] uppercase`}
         >
@@ -22,10 +22,10 @@ const Introduction = () => {
         </p>
         <ArrowDownRight className=" h-6 lg:h-9" />
       </div>
-      <div className="pt-[80px] pb-[80px] lg:pb-[164px] flex flex-nowrap flex-row gap-5 lg:gap-12 overflow-x-auto snap-x snap-mandatory">
+      <div className="pt-[80px] pb-[80px] lg:pb-[164px] flex flex-nowrap flex-row gap-5 lg:gap-12 overflow-x-auto snap-x snap-mandatory z-40 lg:px-[60px] xl:px-[120px]">
         <div
           style={{ backgroundImage: "url('/Folder.svg')" }}
-          className=" w-[266px] h-[332px] lg:w-[400px] lg:h-[500px] flex-none snap-always snap-center z-50 px-[26px] py-[46px] lg:px-[40px] lg:py-[80px] bg-contain"
+          className=" w-[266px] h-[332px] lg:w-[400px] lg:h-[500px] flex-none snap-always snap-center z-30 px-[26px] py-[46px] lg:px-[40px] lg:py-[80px] bg-contain"
         >
           <Image
             src="/dianaPhoto.png"
@@ -52,7 +52,7 @@ const Introduction = () => {
         {introduction.map((intro, index) => (
           <div
             style={{ backgroundImage: "url('/Folder.svg')" }}
-            className=" w-[266px] h-[332px] lg:w-[400px] lg:h-[500px] flex-none snap-always snap-center z-50 px-[26px] py-[46px] lg:px-[40px] lg:py-[80px] bg-contain"
+            className=" w-[266px] h-[332px] lg:w-[400px] lg:h-[500px] flex-none snap-always snap-center z-30 px-[26px] py-[46px] lg:px-[40px] lg:py-[80px] bg-contain"
             key={index}
           >
             <h1

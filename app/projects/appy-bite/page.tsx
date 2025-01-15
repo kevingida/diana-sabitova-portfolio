@@ -28,7 +28,7 @@ const AppyBitePage = () => {
     <div className="relative">
       <div className=" relative max-w-screen-xl mx-auto bg-white w-full  px-4 lg:px-[100px] xl:px-[120px] lg:pb-[110px]">
         <Cursor />
-        <Navbar color="black" />
+        <Navbar color="black" bgColor="white" />
 
         <Image
           src="/appyBite-hero-desktop.png"

@@ -31,11 +31,9 @@ const Project = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                width="0"
-                height="0"
-                sizes="100vw"
-                style={{ width: "800px", height: "auto" }}
-                className="content-['caseStudy']"
+                width={800}
+                height={500}
+                className="content-['caseStudy'] w-[800px] h-auto"
               />
             </Link>
             <h3

@@ -14,13 +14,6 @@ const Cursor = () => {
 
     const target = e.target;
 
-    // const test = window
-    //   .getComputedStyle(target, ":before")
-    //   .getPropertyValue("content");
-
-    // console.log(test);
-    // console.log(test === `"caseStudy"`);
-
     setIsPointer(
       window.getComputedStyle(target, ":before").getPropertyValue("content") ===
         `"caseStudy"`

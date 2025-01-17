@@ -27,7 +27,10 @@ const Project = () => {
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-[76px] gap-y-12 lg:gap-y-[69px]">
         {projects.map((project, index) => (
           <li key={index}>
-            <Link href={`/projects/${project.slug}`}>
+            <Link
+              href={`/projects/${project.slug}`}
+              className=" w-800px h-auto"
+            >
               <img
                 src={project.image}
                 alt={project.title}

@@ -1,8 +1,8 @@
+"use client";
 import { projects } from "@/static/Static";
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const dmSansMedium = localFont({ src: "../font/DMSans-Medium.ttf" });
 const dmSansRegular = localFont({ src: "../font/DMSans-Regular.ttf" });
@@ -31,6 +31,13 @@ const Project = () => {
         height={4371}
         className=" my-16 lg:my-[90px]"
       />
+      <Image
+        src="/greenCarLane.png"
+        alt="test"
+        width={800}
+        height={500}
+        className="content-['caseStudy'] w-[800px] h-auto"
+      />
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-[76px] gap-y-12 lg:gap-y-[69px]">
         {projects.map((project, index) => (
           <li key={index}>
@@ -38,7 +45,7 @@ const Project = () => {
               href={`/projects/${project.slug}`}
               className=" w-800px h-auto"
             >
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
                 width={800}

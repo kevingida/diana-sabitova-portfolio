@@ -28,7 +28,7 @@ const Project = () => {
         {projects.map((project, index) => (
           <li key={index}>
             <Link href={`/projects/${project.slug}`}>
-              <Image
+              <img
                 src={project.image}
                 alt={project.title}
                 width={800}

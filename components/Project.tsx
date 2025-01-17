@@ -11,20 +11,20 @@ const dmSansSemiBold = localFont({ src: "../font/DMSans-SemiBold.ttf" });
 const Project = () => {
   return (
     <section
-      className="w-full px-4 lg:px-[60px] xl:px-[120px] pt-[60px] lg:pt-[91px] pb-[60px] lg:pb-[245px] relative"
+      className="relative w-full px-4 pb-[60px] pt-[60px] md:px-[30px] lg:px-[60px] lg:pb-[245px] lg:pt-[91px] xl:px-[120px]"
       id="featured-work"
     >
       <h2 className={`${dmSansMedium.className} text-[30px] lg:text-[60px]`}>
         Projects
       </h2>
       <p
-        className={`${dmSansRegular.className} text-[16px] leading-5 w-[270px] pb-8 lg:text-[24px] lg:leading-[140%] lg:w-[450px] lg:pb-[91px]`}
+        className={`${dmSansRegular.className} w-[270px] pb-8 text-[16px] leading-5 lg:w-[450px] lg:pb-[91px] lg:text-[24px] lg:leading-[140%]`}
       >
         As a seasoned creator of contemporary, user-friendly web designs and
         digital solutions, I aim to assist you in constructing the brand of your
         fantasies.
       </p>
-      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-[76px] gap-y-12 lg:gap-y-[69px]">
+      <ul className="grid grid-cols-1 gap-x-[76px] gap-y-12 md:grid-cols-2 lg:gap-y-[69px]">
         {projects.map((project, index) => (
           <li key={index}>
             <Link href={`/projects/${project.slug}`}>
@@ -33,11 +33,11 @@ const Project = () => {
                 alt={project.title}
                 width={800}
                 height={500}
-                className=" before:content-['caseStudy'] cursor-pointer w-[800px] h-auto"
+                className="h-auto w-[800px] cursor-pointer before:content-['caseStudy']"
               />
             </Link>
             <h3
-              className={`${dmSansSemiBold.className} text-[16px] lg:text-[28px] pt-4 lg:pt-11`}
+              className={`${dmSansSemiBold.className} pt-4 text-[16px] lg:pt-11 lg:text-[28px]`}
             >
               {project.title}
             </h3>

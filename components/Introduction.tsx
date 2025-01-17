@@ -13,62 +13,62 @@ const robotoRegular = localFont({ src: "../font/Roboto-Regular.ttf" });
 
 const Introduction = () => {
   return (
-    <section className=" w-full  pt-12 lg:pt-[128px] z-20">
-      <div className=" flex flex-row justify-start items-center gap-5 lg:gap-8 lg:pl-[60px] xl:pl-[120px]">
+    <section className="z-20 w-full pt-12 lg:pt-[128px]">
+      <div className="flex flex-row items-center justify-start gap-5 md:pl-[30px] lg:gap-8 lg:pl-[60px] xl:pl-[120px]">
         <p
-          className={`${dmSansRegular.className} text-[20px] lg:text-[24px] uppercase`}
+          className={`${dmSansRegular.className} text-[20px] uppercase lg:text-[24px]`}
         >
           scroll to explore
         </p>
-        <ArrowDownRight className=" h-6 lg:h-9" />
+        <ArrowDownRight className="h-6 lg:h-9" />
       </div>
-      <div className="pt-[80px] pb-[80px] lg:pb-[164px] flex flex-nowrap flex-row gap-5 lg:gap-12 overflow-x-auto snap-x snap-mandatory z-40 lg:px-[60px] xl:px-[120px]">
+      <div className="z-40 flex snap-x snap-mandatory flex-row flex-nowrap gap-5 overflow-x-auto py-[80px] md:px-[30px] md:pt-[50px] lg:gap-12 lg:px-[60px] lg:pb-[164px] xl:px-[120px]">
         <div
           style={{ backgroundImage: "url('/Folder.svg')" }}
-          className=" w-[266px] h-[332px] lg:w-[400px] lg:h-[500px] flex-none snap-always snap-center z-30 px-[26px] py-[46px] lg:px-[40px] lg:py-[80px] bg-contain"
+          className="z-30 h-[332px] w-[266px] flex-none snap-center snap-always bg-contain px-[26px] py-[46px] lg:h-[500px] lg:w-[400px] lg:px-[40px] lg:py-[80px]"
         >
           <Image
             src="/dianaPhoto.png"
             alt="Diana Photo"
             width={125}
             height={125}
-            className=" w-[65px] h-[65px] lg:w-[125px] lg:h-[125px] rounded-full"
+            className="h-[65px] w-[65px] rounded-full lg:h-[125px] lg:w-[125px]"
           />
           <p
-            className={`${dosisSemibold.className} pt-8 lg:pt-[60px] pb-7 lg:pb-[34px] text-[32px] lg:text-[48px] w-[190px] lg:w-[280px] leading-[50px]`}
+            className={`${dosisSemibold.className} w-[190px] pb-7 pt-8 text-[32px] leading-[50px] lg:w-[280px] lg:pb-[34px] lg:pt-[60px] lg:text-[48px]`}
           >
             Hello, I&apos;m Diana Sabitova
           </p>
           <div className="flex-grow border-t border-black/60" />
-          <div className="flex flex-row justify-between items-center gap-4 pt-[18px] lg:pt-[20px]">
+          <div className="flex flex-row items-center justify-between gap-4 pt-[18px] lg:pt-[20px]">
             <p
-              className={`${robotoRegular.className} text-[14px] lg:text-[16px]  `}
+              className={`${robotoRegular.className} text-[14px] lg:text-[16px]`}
             >
               [ UX/UI Designer ]
             </p>
-            <ArrowRight className=" w-[22px] h-[22px] lg:w-[50px] lg:h-[50px]" />
+            <ArrowRight className="h-[22px] w-[22px] lg:h-[50px] lg:w-[50px]" />
           </div>
         </div>
         {introduction.map((intro, index) => (
           <div
             style={{ backgroundImage: "url('/Folder.svg')" }}
-            className=" w-[266px] h-[332px] lg:w-[400px] lg:h-[500px] flex-none snap-always snap-center z-30 px-[26px] py-[46px] lg:px-[40px] lg:py-[80px] bg-contain"
+            className="z-30 h-[332px] w-[266px] flex-none snap-center snap-always bg-contain px-[26px] py-[46px] lg:h-[500px] lg:w-[400px] lg:px-[40px] lg:py-[80px]"
             key={index}
           >
             <h1
-              className={`${dosisRegular.className} text-[26px] lg:text-[40px] leading-none`}
+              className={`${dosisRegular.className} text-[26px] leading-none lg:text-[40px]`}
             >
               {intro.id}
             </h1>
             <p
-              className={`${dosisMedium.className} text-[26px] lg:text-[48px] pb-4`}
+              className={`${dosisMedium.className} pb-4 text-[26px] lg:text-[48px]`}
             >
               {intro.title}
             </p>
-            <div className="flex-grow border-t border-black/60 pb-4 lg:pb-8 " />
+            <div className="flex-grow border-t border-black/60 pb-4 lg:pb-8" />
 
             <p
-              className={`${robotoRegular.className} text-[12px] lg:text-[16px] uppercase leading-[20px] lg:leading-[29px] lg:tracking-[0.63px]`}
+              className={`${robotoRegular.className} text-[12px] uppercase leading-[20px] lg:text-[16px] lg:leading-[29px] lg:tracking-[0.63px]`}
             >
               {intro.description}
             </p>

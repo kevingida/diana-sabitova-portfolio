@@ -14,13 +14,15 @@ const Cursor = () => {
 
     const target = e.target;
 
-    // const test = window.getComputedStyle(target).getPropertyValue("content");
+    // const test = window
+    //   .getComputedStyle(target, ":before")
+    //   .getPropertyValue("content");
 
-    // console.log(test.length);
+    // console.log(test);
     // console.log(test === `"caseStudy"`);
 
     setIsPointer(
-      window.getComputedStyle(target).getPropertyValue("content") ===
+      window.getComputedStyle(target, ":before").getPropertyValue("content") ===
         `"caseStudy"`
     );
   };

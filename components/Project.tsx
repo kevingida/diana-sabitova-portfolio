@@ -27,16 +27,13 @@ const Project = () => {
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-[76px] gap-y-12 lg:gap-y-[69px]">
         {projects.map((project, index) => (
           <li key={index}>
-            <Link
-              href={`/projects/${project.slug}`}
-              className=" w-800px h-auto"
-            >
+            <Link href={`/projects/${project.slug}`}>
               <Image
                 src={project.image}
                 alt={project.title}
                 width={800}
                 height={500}
-                className=" before:content-['caseStudy'] w-[800px] h-auto"
+                className=" before:content-['caseStudy'] cursor-pointer w-[800px] h-auto"
               />
             </Link>
             <h3

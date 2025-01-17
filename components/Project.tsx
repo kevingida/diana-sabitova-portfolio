@@ -36,7 +36,7 @@ const Project = () => {
         alt="test"
         width={800}
         height={500}
-        className="content-['caseStudy'] w-[800px] h-auto"
+        className="w-[800px] h-auto"
       />
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-[76px] gap-y-12 lg:gap-y-[69px]">
         {projects.map((project, index) => (

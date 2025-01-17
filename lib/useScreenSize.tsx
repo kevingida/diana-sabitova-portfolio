@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const useScreenSize = () => {
   const [screenSize, setScreenSize] = useState({
-    width: 1920,
+    width: 0,
     height: 0,
   });
   const isMobile = screenSize.width < 768;
@@ -20,7 +20,7 @@ const useScreenSize = () => {
     };
 
     window.addEventListener("resize", handleResize);
-
+    handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);
     };
